@@ -13,7 +13,30 @@ body {
     font-optical-sizing: auto;
 }
 
-#title {
-     font-size: 2rem;
-     padding: 15px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
 }
+/* hero section */
+ .hero-section {
+    padding-top: 55px 0px;
+ 
+ }
+/* .hero-section{
+    background-image: url(assets/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}  */
+
+.hero-logo{
+    background-image: url(assets/hero-circle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+ .hero-logo img {
+   max-width:  75px;
+   padding-top: 50px;
+ }
