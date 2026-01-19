@@ -11,8 +11,36 @@
     <!-- link style.css -->
      <link rel="stylesheet" href="style.css">
 
+     <!--font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <h1 id="title" class="text-center">ph d18 ph-d18-assignment-02</h1>
+    <!-- header section -->
+     <header class="bg-[#1A0B2E] shadow-sm"> 
+        <nav class="max-w-[1200px] mx-auto flex justify-between pt-5 px-4 items-center">
+            <!-- nav logo -->
+            <a href="#">
+                <h2 class="text-3xl font-bold text-white">Tech <span class="bg-gradient-to-r from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">Wave</span></h2>
+            </a>
+
+            <!-- nav li  -->
+            <ul class="hidden md:flex space-x-10 font-semibold text-white">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Episodes</a></li>
+                <li><a href="#">Host</a></li>
+            </ul>
+
+            <!-- button logo -->
+            <div class="mb-3 hidden md:flex">
+                <button class="p-4 rounded-3xl px-8 font-semibold text-white bg-amber-600 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] shadow-lg hover:scale-105 transition">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+
+            <!-- hamburger menu -->
+            <div class="md:hidden text-white text-2xl cursor-pointer">
+               <img src="assets/hamburger-menu.png" alt="hamburger-menu">
+            </div>
+        </nav>
+     </header>
 </body>
-</html>
+</html>   
