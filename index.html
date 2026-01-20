@@ -25,14 +25,14 @@
         <input class="hidden peer" type="checkbox" id="menu-toggle">
 
         <!-- nav -->
-         <nav class="max-w-[1200px] mx-auto flex justify-between items-center pt-5 px-4">
+         <nav class="max-w-[1200px] mx-auto flex  items-center justify-between relative pt-5 px-4">
 
             <!-- logo -->
             <h2 class="text-3xl font-bold text-white">
                 Tech <span class="bg-gradient-to-r from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">Wave</span>
             </h2>
 
-            <ul class="hidden and md:flex space-x-10 font-semibold to-white">
+            <ul class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-10">
                <li>About</li>
                <li>Episodes</li>
                 <li>Host</li>
@@ -60,7 +60,7 @@
     </header>
 
      <!-- hero section -->
-    <section class="hero-section bg-[url('assets/hero-bg.png')] bg-cover bg-no-repeat bg-center min-h-[60vh]  sm:min-h-screen flex items-center justify-center bg-[#1A0B2E]">
+    <section class="hero-section bg-[url('assets/hero-bg.png')] bg-cover bg-no-repeat bg-center min-h-[60vh] flex items-center justify-center">
         <div class="">
             <div class="hero-content text-center px-4">
 
@@ -122,37 +122,37 @@
         <h2 class="text-center text-3xl md:text-4xl font-bold text-white">
             Why Choose TechWave
        </h2>
-       <div class="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+       <div class="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-5 gap-4 px-4">
         <!-- card 1 -->
-            <div class="md:row-span-2 md:col-span-1 bg-[#2A1446] rounded-3xl  p-5">
+            <div class="md:row-span-2 md:col-span-2 bg-[#2A1446] rounded-3xl  p-5">
                     <img src="assets/headphone.png" alt="headphone">
                     <h3 class="text-2xl font-bold text-white py-5 ">Premium Audio Quality</h3>
                     <p class="font-light text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
             </div>
 
             <!-- card 2 -->
-            <div class="md:row-span-1 md:col-span-2 bg-[#2A1446] rounded-3xl p-5">
+            <div class="md:row-span-1 md:col-span-3 bg-[#2A1446] rounded-3xl p-5">
                    <img src="assets/device.png" alt="device">
                     <h3 class="text-2xl font-bold text-white py-5 ">Mobile Friendly</h3>
                     <p class="font-light text-white">Listen on the go with seamless mobile experience and offline downloads.</p>
             </div>
 
             <!-- card 3 -->
-            <div class="md:row-span-1 md:col-span-2 bg-[#2A1446] rounded-3xl p-5">
+            <div class="md:row-span-1 md:col-span-3 bg-[#2A1446] rounded-3xl p-5">
                 <img src="assets/location.png" alt="location">
                     <h3 class="text-2xl font-bold text-white py-5 ">Global Community</h3>
                     <p class="font-light text-white">Connect with tech enthusiasts from over 120 countries worldwide.</p>
             </div>
 
             <!-- card 4 -->
-            <div class="md:row-span-1 md:col-span-2 bg-[#2A1446] rounded-3xl p-5">
+            <div class="md:row-span-1 md:col-span-3 bg-[#2A1446] rounded-3xl p-5">
                   <img src="assets/device.png" alt="headphone">
                     <h3 class="text-2xl font-bold text-white py-5 ">Exclusive Interviews</h3>
                     <p class="font-light text-white">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
             </div>
 
             <!-- card 5 -->
-             <div class="md:row-span-1 md:col-span-1 bg-[#2A1446] rounded-3xl  p-5">
+             <div class="md:row-span-1 md:col-span-2 bg-[#2A1446] rounded-3xl  p-5">
                   <img src="assets/resource.png" alt="recording">
                     <h3 class="text-2xl font-bold text-white py-5 ">Rich Resources</h3>
                     <p class="font-light text-white">Access show notes, transcripts, and additional learning materials for every episode.</p>
@@ -239,7 +239,7 @@
             <h2 class="text-2xl font-bold text-center py-5 text-white">Meet The Host</h2>
             <div class="flex flex-col md:flex-row gap-3 pt-5 w-full rounded-2xl p-7 bg-[#250D44]">
                 <div class="w-full">
-                    <img class="max-w-[260] mx-auto" src="assets/host.png" alt="hots man">
+                    <img class="max-w-[260px] mx-auto" src="assets/host.png" alt="hots man">
                 </div>
                 <!-- meet content -->
                  <div class="meet-content">
@@ -258,32 +258,51 @@
      </section>
 
     <!-- footer section -->
-    <footer class="pt-8 pb-10 bg-[#1A0B2E]">
+    <footer class="pt-8 pb-10 bg-[#1A0B2E] text-white">
         <div class="footer-container">
+
             <div class="pt-5">
                 <h2 class="text-3xl font-bold text-center text-white">Tech <span class="bg-gradient-to-r from-[#9100F8] via-[#FB09B4] to-[#F7E93F] bg-clip-text text-transparent">Wave</span></h2>
             </div>
 
             <!--  media  icon-->
             <ul class="flex flex-wrap gap-y-7 justify-center gap-x-10 pt-10 text-white">
+                <!-- media 1 -->
                 <li class="flex gap-5 ">
-                    <img  src="assets/spotify.png" alt="spotify"> Spotify
+                    <a href="#" class="flex items-center gap-3 hover:text-[#FB09B4] transition"  aria-label="Spotify" target="_blank">
+                      <img class="w-6 h-6" src="assets/spotify.png" alt="Spotify logo"> Spotify
+                   </a>
                 </li>
-                <li class="flex gap-5">
-                    <img class="" src="assets/apple-podcast.png" alt="apple-podcast"> Apple Podcast
-                </li>
-                <li class="flex gap-5">
-                    <img src="assets/youtube.png" alt="youtube"> YouTube
-                </li>
-                <li class="flex gap-5">
-                    <img src="assets/twitter.png" alt="twitter"> Twitter
-                </li>
-            </ul>
 
-            <!-- copy  -->
-             <div class="pt-10">
-                <p class="text-center text-white">&copy;TechWave Podcast. All rights reserved. </p>
-             </div>
+                <!-- media 3 -->
+                <li class="flex gap-5 ">
+                    <a href="#" class="flex items-center gap-3 hover:text-[#FB09B4] transition"  aria-label="Spotify" target="_blank">
+                      <img class="w-6 h-6" src="assets/x.png" alt="Spotify logo"> Spotify
+                   </a>
+                </li>
+
+                <!-- media 4 -->
+                <li class="flex gap-5 ">
+                    <a href="#" class="flex items-center gap-3 hover:text-[#FB09B4] transition"  aria-label="Spotify" target="_blank">
+                      <img class="w-6 h-6" src="assets/instagram.png" alt="instagram logo"> Spotify
+                   </a>
+                </li>
+
+                <!-- media- 5 -->
+                <li class="flex gap-5 ">
+                    <a href="#" class="flex items-center gap-3 hover:text-[#FB09B4] transition"  aria-label="Spotify" target="_blank">
+                      <img class="w-6 h-6" src="assets/youtube.png" alt="youtube logo"> Spotify
+                   </a>
+                </li>
+ 
+                  <!-- copy  -->
+                <div class="pt-10 w-full flex justify-center">
+                <p id="footer-text" class="text-sm text-white text-center">
+                    &copy; TechWave Podcast. All rights reserved.
+                </p>
+                </div>
+
+
         </div>
     </footer>
 </body>

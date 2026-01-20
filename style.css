@@ -69,13 +69,21 @@ body {
     position: relative;
 }
 
+/* footer-text */
+ 
+
  
 @media screen and (max-width:576px) {
     .footer-container {
        background-size: contain;
       padding-top: 50px;
 
-        
-    }
-}
  
+    }
+     
+}
+ @media screen and (min-width:576px) {
+    #footer-text {
+        text-align: center;
+    }
+ }  
