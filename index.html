@@ -75,11 +75,11 @@
                 <!-- btn -->
                  <div class="flex justify-center gap-4 mt-6 text-[14px]">
                     <button
-                         class="flex items-center gap-3 px-6 py-3 rounded-3xl font-semibold text-white bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] shadow-lg hover:scale-105 transition"><img src="assets/spotify.png" alt="spotify"> Listen on Spotify
+                         class=" flex items-center gap-3 px-6 py-3 rounded-3xl font-semibold text-white bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-2xl"><img src="assets/spotify.png" alt="spotify"> Listen on Spotify
                     </button>
 
                     <button
-                       class="flex items-center px-8 rounded-3xl gap-3 border-2 text-green-500 font-semibold shadow-lg hover:scale-105 transition" ><img src="assets/message.png" alt="message"> Subscribe
+                       class=" flex items-center px-8 rounded-3xl gap-3 border-2 text-green-500 font-semibold shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-2xl" ><img src="assets/message.png" alt="message"> Subscribe
                      </button>
                  </div>
              </div>
@@ -163,14 +163,16 @@
     <!-- featured section -->
     <section class="bg-[#1A0B2E]">
         <div class="container">
-            <h2 class="text-3xl md:text-5xl text-center font-bold text-white pb-5">Featured Episodes</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-[#250D44] p-4 rounded-2xl">
+            <h2 class="text-3xl md:text-5xl text-center font-bold text-white pb-5">Featured Episodes
+            </h2>
 
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-[#250D44] p-4 rounded-2xl  transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-2xl">
                     <!-- youtube video -->
                     <div class="video-box">
                       <iframe 
-                         class="absolute inset-0 w-full h-full rounded-lg"    src="https://www.youtube.com/embed/muBBYZXYgoM" allowfullscreen>
+                            class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/muBBYZXYgoM" allowfullscreen>
                        </iframe>
                      </div>
 
@@ -186,7 +188,7 @@
                 </div>
 
                 <!-- card 2 -->
-                  <div class="bg-[#250D44] p-4 rounded-2xl">
+                <div class="bg-[#250D44] p-4 rounded-2xl  transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-2xl">
 
                     <!-- youtube video -->
                     <div class="video-box">
@@ -209,7 +211,7 @@
                 </div>
 
                 <!-- card 3 -->
-                 <div class="bg-[#250D44] p-4 rounded-2xl">
+                <div class="bg-[#250D44] p-4 rounded-2xl  transform transition duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-2xl">
                     <!-- youtube video -->
                     <div class="video-box">
                       <iframe
@@ -294,15 +296,13 @@
                       <img class="w-6 h-6" src="assets/youtube.png" alt="youtube logo"> Spotify
                    </a>
                 </li>
- 
+            </ul>
                   <!-- copy  -->
-                <div class="pt-10 w-full flex justify-center">
-                <p id="footer-text" class="text-sm text-white text-center">
+            <div class="pt-10 w-full flex justify-center">
+               <p id="footer-text" class="text-sm text-white text-center">
                     &copy; TechWave Podcast. All rights reserved.
-                </p>
-                </div>
-
-
+                 </p>
+             </div>
         </div>
     </footer>
 </body>
