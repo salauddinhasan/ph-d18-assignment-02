@@ -20,7 +20,7 @@ body {
 }
 /* hero section */
  .hero-section {
-    padding-top: 55px 0px;
+    padding: 55px 0px;
  
  }
 /* .hero-section{
@@ -41,20 +41,6 @@ body {
    padding-top: 50px;
  }
 
- .choose-section{
-    padding: 40px 0px;
- }
-
- .choose-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
- }
- .box {
-    padding: 10px;
-    line-height: 30px;
-    border: 1px solid tomato;
- }
 
  /* featured section */
 
